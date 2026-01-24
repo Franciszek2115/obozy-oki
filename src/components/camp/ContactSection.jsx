@@ -16,8 +16,8 @@ export default function ContactSection() {
     childName: '',
     childAge: '',
     school: '',
-    package: '',
     transport: '',
+    busCity: '',
     message: '',
     consent: false
   });
@@ -125,8 +125,8 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <div className="font-medium text-slate-300 text-sm">Miejsce obozu</div>
-                    <div className="text-white">Grybów, ul. Chłodna 16</div>
-                    <div className="text-slate-400 text-sm">33-330 Grybów</div>
+                    <div className="text-white">Ośrodek Wczasowy Wierna</div>
+                    <div className="text-slate-400 text-sm">Bocheniec 55B, 28-366 Małogoszcz</div>
                   </div>
                 </div>
               </div>
@@ -251,32 +251,30 @@ export default function ContactSection() {
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="package">Wybrany pakiet *</Label>
-                  <Select value={formData.package} onValueChange={(v) => setFormData({...formData, package: v})}>
-                    <SelectTrigger className="bg-white">
-                      <SelectValue placeholder="Wybierz pakiet" />
-                    </SelectTrigger>
-                    <SelectContent>
-                      <SelectItem value="basic">Pakiet Podstawowy (2 490 PLN)</SelectItem>
-                      <SelectItem value="transport">Pakiet z Transportem (2 890 PLN)</SelectItem>
-                      <SelectItem value="premium">Pakiet Premium (3 290 PLN)</SelectItem>
-                    </SelectContent>
-                  </Select>
-                </div>
-
-                <div className="space-y-2">
                   <Label htmlFor="transport">Dojazd *</Label>
                   <Select value={formData.transport} onValueChange={(v) => setFormData({...formData, transport: v})}>
                     <SelectTrigger className="bg-white">
                       <SelectValue placeholder="Wybierz opcję" />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="own">Dojazd własny</SelectItem>
-                      <SelectItem value="warsaw">Autokar - Warszawa</SelectItem>
-                      <SelectItem value="lodz">Autokar - Łódź</SelectItem>
-                      <SelectItem value="czestochowa">Autokar - Częstochowa</SelectItem>
-                      <SelectItem value="katowice">Autokar - Katowice</SelectItem>
-                      <SelectItem value="krakow">Autokar - Kraków</SelectItem>
+                      <SelectItem value="own">Dojazd własny (2 390 PLN)</SelectItem>
+                      <SelectItem value="warsaw">Dojazd własny + autokar (2 540 PLN)</SelectItem>
+                    </SelectContent>
+                  </Select>
+                </div>
+
+                <div className="space-y-2">
+                  <Label htmlFor="busCity">Jeśli autokar - z którego miasta?</Label>
+                  <Select value={formData.busCity} onValueChange={(v) => setFormData({...formData, busCity: v})}>
+                    <SelectTrigger className="bg-white">
+                      <SelectValue placeholder="Wybierz miasto" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="warsaw">Warszawa</SelectItem>
+                      <SelectItem value="lodz">Łódź</SelectItem>
+                      <SelectItem value="czestochowa">Częstochowa</SelectItem>
+                      <SelectItem value="katowice">Katowice</SelectItem>
+                      <SelectItem value="krakow">Kraków</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>

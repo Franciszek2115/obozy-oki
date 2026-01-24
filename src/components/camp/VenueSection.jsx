@@ -26,11 +26,11 @@ export default function VenueSection() {
         >
           <span className="text-cyan-600 font-semibold text-sm uppercase tracking-wider">Lokalizacja</span>
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mt-4 mb-6">
-            Ośrodek w Grybowie
+            Ośrodek Wczasowy Wierna
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-            Ośrodek Szkoleniowo-Wypoczynkowy Politechniki Warszawskiej położony na malowniczym 
-            wzgórzu z widokiem na Beskid Sądecki – idealne miejsce do nauki i wypoczynku.
+            Położony w malowniczym Bocheńcu, 25 km od Kielc, wśród pięknych lasów i nad 
+            przepływającą Wierną Rzeką – raj dla miłośników przyrody i spokoju.
           </p>
         </motion.div>
 
@@ -41,16 +41,26 @@ export default function VenueSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <div className="relative">
+            <div className="relative grid grid-cols-2 gap-3">
               <img 
-                src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800&q=80"
-                alt="Ośrodek w Grybowie"
-                className="rounded-3xl shadow-2xl w-full"
+                src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=500&q=80"
+                alt="Ośrodek Wierna - budynek główny"
+                className="rounded-2xl shadow-xl w-full h-48 object-cover col-span-2"
+              />
+              <img 
+                src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=400&q=80"
+                alt="Pokój w ośrodku"
+                className="rounded-2xl shadow-lg w-full h-32 object-cover"
+              />
+              <img 
+                src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?w=400&q=80"
+                alt="Okolica ośrodka"
+                className="rounded-2xl shadow-lg w-full h-32 object-cover"
               />
               <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-xl px-4 py-2 shadow-lg">
                 <div className="flex items-center gap-2">
                   <MapPin className="w-5 h-5 text-cyan-600" />
-                  <span className="font-semibold text-slate-800">Grybów, ul. Chłodna 16</span>
+                  <span className="font-semibold text-slate-800">Bocheniec 55B</span>
                 </div>
               </div>
             </div>
@@ -63,17 +73,17 @@ export default function VenueSection() {
             transition={{ duration: 0.6 }}
           >
             <h3 className="text-2xl font-bold text-slate-900 mb-6">
-              Wypoczynek w sercu Beskidu Sądeckiego
+              Czyste powietrze i piękna przyroda Świętokrzyskiego
             </h3>
             <p className="text-slate-600 text-lg leading-relaxed mb-6">
-              Grybów to malownicze miasteczko położone w Beskidzie Sądeckim, otoczone pięknymi 
-              zalesionymi górami. Ośrodek znajduje się na wzgórzu, w sąsiedztwie lasu i rzeki Biała, 
-              co zapewnia ciszę, spokój i bliskość natury.
+              Bocheniec to cichy zakątek Kielecczyzny położony ok. 25 km od stolicy województwa. 
+              Atrakcją tego miejsca jest przede wszystkim czyste, nieskażone powietrze oraz uroki 
+              lokalnego krajobrazu, w którym dominuje las i woda – Wierna Rzeka przepływa tuż obok.
             </p>
             <p className="text-slate-600 text-lg leading-relaxed mb-8">
-              Cztery pawilony rozmieszczone na dużym, zielonym terenie tworzą idealne warunki 
-              do nauki, integracji i aktywnego wypoczynku. Ośrodek posiada wszelkie certyfikaty 
-              do przyjmowania grup dzieci i młodzieży.
+              W niedalekiej odległości znajduje się malowniczo położony zalew w Bolminie – raj 
+              dla wędkarzy i uprawiających sporty wodne. Ośrodek to znakomita baza wypadowa do 
+              zwiedzania Gór Świętokrzyskich i najciekawszych zabytków regionu.
             </p>
 
             <div className="grid grid-cols-2 gap-4">
@@ -106,37 +116,47 @@ export default function VenueSection() {
           <h3 className="text-2xl font-bold text-slate-900 mb-8 text-center">
             Atrakcje w okolicy
           </h3>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="text-center">
+              <div className="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <svg className="w-8 h-8 text-blue-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M3 12c0-2.76 2.24-5 5-5s5 2.24 5 5-2.24 5-5 5-5-2.24-5-5zm16 0c0-2.76-2.24-5-5-5s-5 2.24-5 5 2.24 5 5 5 5-2.24 5-5z"/>
+                </svg>
+              </div>
+              <h4 className="font-bold text-slate-800 mb-2">Zalew Bolmin</h4>
+              <p className="text-slate-600 text-sm">
+                Raj dla wędkarzy i miłośników sportów wodnych, Park Aquatica z atrakcjami
+              </p>
+            </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-emerald-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
                 <TreePine className="w-8 h-8 text-emerald-600" />
               </div>
-              <h4 className="font-bold text-slate-800 mb-2">Szlaki górskie</h4>
+              <h4 className="font-bold text-slate-800 mb-2">Góry Świętokrzyskie</h4>
               <p className="text-slate-600 text-sm">
-                Jaworzyna Krynicka, Góra Jaworze z wieżą widokową, malownicze trasy piesze i rowerowe
+                Szlaki piesze i rowerowe, Łysica, rezerwaty przyrody, naturalne piękno regionu
               </p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-blue-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <div className="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <svg className="w-8 h-8 text-purple-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                   <path d="M3 18h18M5 18V8l7-4 7 4v10M12 18V8" />
                 </svg>
               </div>
-              <h4 className="font-bold text-slate-800 mb-2">Zabytki</h4>
+              <h4 className="font-bold text-slate-800 mb-2">Zabytki regionu</h4>
               <p className="text-slate-600 text-sm">
-                Szlak Architektury Drewnianej, zabytkowe cerkwie łemkowskie, Biecz – „polski Carcassonne"
+                Zamek Królewski w Chęcinach, Jaskinia Raj, Park Etnograficzny w Tokarni
               </p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-orange-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
                 <svg className="w-8 h-8 text-orange-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <circle cx="12" cy="12" r="10" />
-                  <path d="M12 6v6l4 2" />
+                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
                 </svg>
               </div>
-              <h4 className="font-bold text-slate-800 mb-2">Aktywności</h4>
+              <h4 className="font-bold text-slate-800 mb-2">Kielce</h4>
               <p className="text-slate-600 text-sm">
-                Kąpielisko na rzece Biała, zalew Klimkówka, baseny termalne, spływ Dunajcem
+                Stolica województwa, muzea, centrum handlowe – 25 km od ośrodka
               </p>
             </div>
           </div>

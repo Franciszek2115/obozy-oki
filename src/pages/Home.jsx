@@ -3,6 +3,7 @@ import HeroSection from '../components/camp/HeroSection';
 import AboutSection from '../components/camp/AboutSection';
 import VenueSection from '../components/camp/VenueSection';
 import BenefitsSection from '../components/camp/BenefitsSection';
+import GroupsSection from '../components/camp/GroupsSection';
 import ProgramSection from '../components/camp/ProgramSection';
 import TeamSection from '../components/camp/TeamSection';
 import PricingSection from '../components/camp/PricingSection';
@@ -18,6 +19,7 @@ export default function Home() {
       <AboutSection />
       <VenueSection />
       <BenefitsSection />
+      <GroupsSection />
       <ProgramSection />
       <TeamSection />
       <PricingSection />

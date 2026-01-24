@@ -33,6 +33,7 @@ export default function Layout({ children }) {
   const navLinks = [
     { label: 'O obozie', id: 'about' },
     { label: 'Ośrodek', id: 'venue' },
+    { label: 'Grupy', id: 'groups' },
     { label: 'Program', id: 'program' },
     { label: 'Kadra', id: 'team' },
     { label: 'Cennik', id: 'pricing' },
@@ -194,7 +195,7 @@ export default function Layout({ children }) {
               <ul className="space-y-3 text-slate-400">
                 <li>kontakt@oki.org.pl</li>
                 <li>+48 782 508 375</li>
-                <li>Grybów, ul. Chłodna 16</li>
+                <li>Bocheniec 55B, Małogoszcz</li>
               </ul>
             </div>
           </div>

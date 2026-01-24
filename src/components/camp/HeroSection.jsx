@@ -65,7 +65,7 @@ export default function HeroSection() {
 
           <p className="text-xl md:text-2xl text-slate-300 max-w-3xl mx-auto mb-12 leading-relaxed">
             Tydzień, który zmieni Twoją przyszłość. Algorytmika, programowanie i przyjaźnie 
-            na całe życie w otoczeniu Beskidu Sądeckiego.
+            na całe życie w sercu Gór Świętokrzyskich.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
@@ -93,7 +93,7 @@ export default function HeroSection() {
               whileHover={{ scale: 1.05, backgroundColor: "rgba(255,255,255,0.1)" }}
             >
               <Calendar className="w-8 h-8 text-cyan-400 mx-auto mb-3" />
-              <div className="text-2xl font-bold text-white">19-26 lipca</div>
+              <div className="text-2xl font-bold text-white">19-26 sierpnia</div>
               <div className="text-slate-400 text-sm">2026</div>
             </motion.div>
             
@@ -102,8 +102,8 @@ export default function HeroSection() {
               whileHover={{ scale: 1.05, backgroundColor: "rgba(255,255,255,0.1)" }}
             >
               <MapPin className="w-8 h-8 text-cyan-400 mx-auto mb-3" />
-              <div className="text-2xl font-bold text-white">Grybów</div>
-              <div className="text-slate-400 text-sm">Beskid Sądecki</div>
+              <div className="text-2xl font-bold text-white">Bocheniec</div>
+              <div className="text-slate-400 text-sm">Góry Świętokrzyskie</div>
             </motion.div>
             
             <motion.div 
@@ -111,7 +111,7 @@ export default function HeroSection() {
               whileHover={{ scale: 1.05, backgroundColor: "rgba(255,255,255,0.1)" }}
             >
               <Users className="w-8 h-8 text-cyan-400 mx-auto mb-3" />
-              <div className="text-2xl font-bold text-white">60 miejsc</div>
+              <div className="text-2xl font-bold text-white">70 miejsc</div>
               <div className="text-slate-400 text-sm">Limit uczestników</div>
             </motion.div>
           </div>
