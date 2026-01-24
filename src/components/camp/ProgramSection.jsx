@@ -49,7 +49,7 @@ export default function ProgramSection() {
       title: "Wycieczka górska",
       activities: [
         { time: "7:00", title: "Wczesne śniadanie", icon: Clock, desc: "" },
-        { time: "8:00 - 16:00", title: "Wycieczka na Jaworzynę", icon: Mountain, desc: "Zdobywamy szczyt Beskidu!" },
+        { time: "8:00 - 16:00", title: "Wycieczka", icon: Mountain, desc: "Szczegóły do ustalenia" },
         { time: "16:30", title: "Powrót i odpoczynek", icon: Users, desc: "" },
         { time: "18:00", title: "Kolacja", icon: Clock, desc: "" },
         { time: "20:00", title: "Warsztaty specjalne", icon: Star, desc: "Kostka Rubika, gry logiczne" }

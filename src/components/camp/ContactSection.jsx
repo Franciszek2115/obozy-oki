@@ -257,8 +257,8 @@ export default function ContactSection() {
                       <SelectValue placeholder="Wybierz opcję" />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="own">Dojazd własny (2 390 PLN)</SelectItem>
-                      <SelectItem value="warsaw">Dojazd własny + autokar (2 540 PLN)</SelectItem>
+                      <SelectItem value="own">Dojazd własny (2 650 PLN)</SelectItem>
+                      <SelectItem value="bus">Z autokarem (cena do ustalenia)</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>

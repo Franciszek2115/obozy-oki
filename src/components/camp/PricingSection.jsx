@@ -10,7 +10,7 @@ export default function PricingSection() {
 
   const mainPackage = {
     name: "Obóz OKI 2026",
-    price: "2 390",
+    price: "2 650",
     description: "Pełny pakiet obozowy – wszystko czego potrzebujesz",
     features: [
       "8 dni i 7 nocy w Ośrodku Wierna",
@@ -30,8 +30,8 @@ export default function PricingSection() {
 
   const transportOption = {
     label: "Transport autokarem (opcjonalnie)",
-    price: "150",
-    description: "Dojazd na obóz z wybranych miast"
+    price: "do ustalenia",
+    description: "Dojazd na obóz z wybranych miast – szczegóły wkrótce"
   };
 
   const included = [
@@ -105,9 +105,7 @@ export default function PricingSection() {
                     <h4 className="font-bold text-slate-900 mb-2">{transportOption.label}</h4>
                     <p className="text-slate-600 text-sm mb-3">{transportOption.description}</p>
                     <div className="flex items-baseline gap-2">
-                      <span className="text-3xl font-bold text-slate-900">+{transportOption.price}</span>
-                      <span className="text-slate-500">PLN</span>
-                      <span className="text-slate-500 text-sm ml-2">(w obie strony)</span>
+                      <span className="text-2xl font-bold text-slate-900">{transportOption.price}</span>
                     </div>
                     <p className="text-xs text-slate-500 mt-2">
                       Trasy: Warszawa • Łódź • Częstochowa • Katowice • Kraków
@@ -158,34 +156,18 @@ export default function PricingSection() {
           </div>
         </motion.div>
 
-        {/* Important dates */}
+        {/* Important info */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="mt-12 grid md:grid-cols-3 gap-6"
+          className="mt-12 bg-gradient-to-br from-slate-50 to-white rounded-2xl p-8 border border-slate-200 text-center"
         >
-          <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-2xl p-6 border border-amber-200">
-            <Calendar className="w-8 h-8 text-amber-600 mb-3" />
-            <h4 className="font-bold text-slate-900 mb-1">Early Bird</h4>
-            <p className="text-slate-600 text-sm">Do 30.04.2026</p>
-            <p className="text-amber-700 font-semibold mt-2">-150 PLN rabatu</p>
-          </div>
-          
-          <div className="bg-gradient-to-br from-cyan-50 to-blue-50 rounded-2xl p-6 border border-cyan-200">
-            <Bus className="w-8 h-8 text-cyan-600 mb-3" />
-            <h4 className="font-bold text-slate-900 mb-1">Transport</h4>
-            <p className="text-slate-600 text-sm">Autokar w obie strony</p>
-            <p className="text-cyan-700 font-semibold mt-2">+150 PLN</p>
-          </div>
-          
-          <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl p-6 border border-purple-200">
-            <Star className="w-8 h-8 text-purple-600 mb-3" />
-            <h4 className="font-bold text-slate-900 mb-1">Rodzeństwo</h4>
-            <p className="text-slate-600 text-sm">Zniżka dla rodzeństwa</p>
-            <p className="text-purple-700 font-semibold mt-2">-10% na drugą osobę</p>
-          </div>
+          <h4 className="font-bold text-slate-900 text-lg mb-3">Informacje dodatkowe</h4>
+          <p className="text-slate-600">
+            Szczegóły dotyczące transportu autokarem oraz wycieczek zostaną podane wkrótce.
+          </p>
         </motion.div>
       </div>
     </section>

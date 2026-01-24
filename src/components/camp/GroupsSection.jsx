@@ -5,11 +5,11 @@ import { Users, Award, Rocket, Brain } from "lucide-react";
 export default function GroupsSection() {
   const groups = [
     {
-      name: "Grupa Początkująca",
+      name: "Programowanie od zera",
       level: "Poziom I",
       icon: Users,
       color: "emerald",
-      description: "Dla osób, które dopiero zaczynają przygodę z algorytmiką i programowaniem olimpijskim.",
+      description: "Dla osób, które zaczynają swoją przygodę z programowaniem lub mają podstawową wiedzę.",
       requirements: [
         "Znajomość podstaw programowania (C++/Python/Java)",
         "Umiejętność pisania prostych programów",
@@ -26,7 +26,7 @@ export default function GroupsSection() {
       forWho: "Idealna dla uczniów klas 6-8 SP oraz 1 LO/technikum"
     },
     {
-      name: "Grupa Średniozaawansowana",
+      name: "Programowanie zaawansowane",
       level: "Poziom II",
       icon: Award,
       color: "cyan",
@@ -47,7 +47,7 @@ export default function GroupsSection() {
       forWho: "Polecana dla uczestników zawodów programistycznych"
     },
     {
-      name: "Grupa Zaawansowana",
+      name: "Olimpiada Informatyczna",
       level: "Poziom III",
       icon: Rocket,
       color: "purple",
@@ -195,14 +195,13 @@ export default function GroupsSection() {
                 Nie jesteś pewien, do której grupy należysz?
               </h3>
               <p className="text-slate-600 leading-relaxed mb-4">
-                Nie martw się! Podczas rejestracji poprosimy Cię o krótki opis Twojego doświadczenia 
-                i zainteresowań. Na podstawie tych informacji oraz krótkiego testu kwalifikacyjnego 
-                przeprowadzonego pierwszego dnia obozu, przydzielimy Cię do odpowiedniej grupy.
+                Nie martw się! Pierwszego dnia obozu przeprowadzimy test kompetencji, który pomoże 
+                nam przydzielić Cię do odpowiedniej grupy. Test jest krótki i służy tylko temu, 
+                aby zapewnić Ci najlepsze warunki do nauki.
               </p>
               <p className="text-slate-600 leading-relaxed">
-                Grupy są elastyczne – jeśli okaże się, że material jest dla Ciebie za łatwy lub 
-                za trudny, zawsze możemy przenieść Cię do innej grupy, aby zapewnić Ci optymalne 
-                warunki do nauki.
+                Grupy są elastyczne – jeśli okaże się, że materiał jest dla Ciebie za łatwy lub 
+                za trudny, zawsze możemy przenieść Cię do innej grupy podczas obozu.
               </p>
             </div>
           </div>

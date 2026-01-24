@@ -111,30 +111,7 @@ export default function TeamSection() {
           ))}
         </div>
 
-        {/* Call for volunteers */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="mt-16 bg-gradient-to-r from-slate-800 to-slate-900 rounded-3xl p-10 text-center"
-        >
-          <GraduationCap className="w-12 h-12 text-cyan-400 mx-auto mb-4" />
-          <h3 className="text-2xl font-bold text-white mb-4">
-            Chcesz dołączyć do kadry?
-          </h3>
-          <p className="text-slate-300 max-w-2xl mx-auto mb-6">
-            Jeśli jesteś finalistą lub laureatem Olimpiady Informatycznej i chciałbyś 
-            dzielić się swoją wiedzą z młodszymi kolegami – skontaktuj się z nami!
-          </p>
-          <a 
-            href="mailto:kontakt@oki.org.pl"
-            className="inline-flex items-center gap-2 bg-cyan-500 hover:bg-cyan-600 text-white px-6 py-3 rounded-xl font-medium transition-colors"
-          >
-            <Code2 className="w-5 h-5" />
-            Napisz do nas
-          </a>
-        </motion.div>
+
       </div>
     </section>
   );
