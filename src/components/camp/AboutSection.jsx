@@ -51,9 +51,15 @@ export default function AboutSection() {
             Więcej niż obóz informatyczny
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
-            Obóz OKI to wyjątkowe połączenie intensywnej nauki programowania, wspaniałej atmosfery 
-            i niezapomnianych przygód w górach. To miejsce, gdzie rodzą się przyjaźnie i pasje na całe życie.
+            Obóz OKI to wyjątkowe połączenie intensywnej nauki programowania w C++, wspaniałej atmosfery 
+            i niezapomnianych przygód. To miejsce, gdzie rodzą się przyjaźnie i pasje na całe życie.
           </p>
+          <div className="mt-6 inline-flex items-center gap-2 bg-cyan-100 text-cyan-800 px-4 py-2 rounded-full text-sm font-medium">
+            <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+            </svg>
+            Język programowania: C++
+          </div>
         </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
@@ -91,15 +97,15 @@ export default function AboutSection() {
                 Dla kogo jest ten obóz?
               </h3>
               <p className="text-slate-300 text-lg leading-relaxed mb-6">
-                Obóz jest skierowany do uczniów szkół podstawowych i średnich, którzy interesują się 
-                programowaniem i algorytmiką. Niezależnie od tego, czy dopiero zaczynasz przygodę 
-                z kodem, czy już startowałeś w olimpiadzie – znajdziesz tu coś dla siebie.
+                Obóz jest skierowany do młodzieży do 17 lat (na koniec obozu), która interesuje się 
+                programowaniem w C++ i algorytmiką. Niezależnie od tego, czy dopiero zaczynasz przygodę 
+                z kodem, czy już startujesz w olimpiadzie – znajdziesz tu coś dla siebie.
               </p>
               <ul className="space-y-4">
                 {[
-                  "Uczniowie klas 6-8 szkoły podstawowej",
-                  "Uczniowie szkół średnich (każdy rocznik)",
-                  "Pasjonaci algorytmiki i programowania",
+                  "Młodzież do 17 lat (wiek na koniec obozu)",
+                  "Uczniowie szkół podstawowych i średnich",
+                  "Pasjonaci algorytmiki i programowania w C++",
                   "Osoby przygotowujące się do Olimpiady Informatycznej"
                 ].map((item, i) => (
                   <li key={i} className="flex items-center gap-3 text-slate-200">

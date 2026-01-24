@@ -105,62 +105,7 @@ export default function VenueSection() {
           </motion.div>
         </div>
 
-        {/* Activities nearby */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="bg-white rounded-3xl p-10 border border-slate-200"
-        >
-          <h3 className="text-2xl font-bold text-slate-900 mb-8 text-center">
-            Atrakcje w okolicy
-          </h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="text-center">
-              <div className="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-blue-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M3 12c0-2.76 2.24-5 5-5s5 2.24 5 5-2.24 5-5 5-5-2.24-5-5zm16 0c0-2.76-2.24-5-5-5s-5 2.24-5 5 2.24 5 5 5 5-2.24 5-5z"/>
-                </svg>
-              </div>
-              <h4 className="font-bold text-slate-800 mb-2">Zalew Bolmin</h4>
-              <p className="text-slate-600 text-sm">
-                Raj dla wędkarzy i miłośników sportów wodnych, Park Aquatica z atrakcjami
-              </p>
-            </div>
-            <div className="text-center">
-              <div className="w-16 h-16 bg-emerald-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <TreePine className="w-8 h-8 text-emerald-600" />
-              </div>
-              <h4 className="font-bold text-slate-800 mb-2">Góry Świętokrzyskie</h4>
-              <p className="text-slate-600 text-sm">
-                Szlaki piesze i rowerowe, Łysica, rezerwaty przyrody, naturalne piękno regionu
-              </p>
-            </div>
-            <div className="text-center">
-              <div className="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-purple-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M3 18h18M5 18V8l7-4 7 4v10M12 18V8" />
-                </svg>
-              </div>
-              <h4 className="font-bold text-slate-800 mb-2">Zabytki regionu</h4>
-              <p className="text-slate-600 text-sm">
-                Zamek Królewski w Chęcinach, Jaskinia Raj, Park Etnograficzny w Tokarni
-              </p>
-            </div>
-            <div className="text-center">
-              <div className="w-16 h-16 bg-orange-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-orange-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
-                </svg>
-              </div>
-              <h4 className="font-bold text-slate-800 mb-2">Kielce</h4>
-              <p className="text-slate-600 text-sm">
-                Stolica województwa, muzea, centrum handlowe – 25 km od ośrodka
-              </p>
-            </div>
-          </div>
-        </motion.div>
+
       </div>
     </section>
   );

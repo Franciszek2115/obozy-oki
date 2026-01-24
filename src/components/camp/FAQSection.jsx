@@ -12,7 +12,7 @@ export default function FAQSection() {
     },
     {
       question: "Jaki poziom programowania jest wymagany?",
-      answer: "Minimalne wymagania to znajomość podstaw dowolnego języka programowania (C++, Python lub Java) oraz umiejętność pisania prostych programów z pętlami i instrukcjami warunkowymi. Na obozie uczestnicy są dzieleni na grupy według poziomu zaawansowania, więc każdy znajdzie odpowiednie dla siebie wyzwania."
+      answer: "Na obozie programujemy w C++. Mamy grupy od zupełnie początkujących (programowanie od zera) po zaawansowanych olimpijczyków. Pierwszego dnia przeprowadzamy test, który pomoże nam przydzielić Cię do odpowiedniej grupy - każdy znajdzie odpowiednie dla siebie wyzwania."
     },
     {
       question: "Czy muszę mieć własny laptop?",

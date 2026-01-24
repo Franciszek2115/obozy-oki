@@ -232,7 +232,7 @@ export default function ContactSection() {
                       <SelectValue placeholder="Wybierz wiek" />
                     </SelectTrigger>
                     <SelectContent>
-                      {[11, 12, 13, 14, 15, 16, 17, 18, 19].map(age => (
+                      {[11, 12, 13, 14, 15, 16, 17].map(age => (
                         <SelectItem key={age} value={String(age)}>{age} lat</SelectItem>
                       ))}
                     </SelectContent>

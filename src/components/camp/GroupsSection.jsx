@@ -9,30 +9,53 @@ export default function GroupsSection() {
       level: "Poziom I",
       icon: Users,
       color: "emerald",
-      description: "Dla osób, które zaczynają swoją przygodę z programowaniem lub mają podstawową wiedzę.",
+      description: "Dla osób, które rozpoczynają swoją przygodę z programowaniem w C++.",
       requirements: [
-        "Znajomość podstaw programowania (C++/Python/Java)",
-        "Umiejętność pisania prostych programów",
-        "Pętle, instrukcje warunkowe, tablice",
-        "Chęć nauki i rozwoju"
+        "Brak wymagań wstępnych",
+        "Chęć nauki programowania",
+        "Motywacja i zaangażowanie",
+        "Własny laptop"
       ],
       topics: [
-        "Wprowadzenie do złożoności obliczeniowej",
-        "Podstawowe struktury danych",
-        "Sortowanie i wyszukiwanie",
-        "Algorytmy zachłanne - wprowadzenie",
-        "Podstawy teorii grafów"
+        "Podstawy składni C++",
+        "Zmienne, typy danych, operatory",
+        "Instrukcje warunkowe i pętle",
+        "Tablice i podstawowe operacje",
+        "Funkcje i procedury",
+        "Pierwsze algorytmy"
       ],
-      forWho: "Idealna dla uczniów klas 6-8 SP oraz 1 LO/technikum"
+      forWho: "Idealna dla osób bez doświadczenia w programowaniu"
     },
     {
-      name: "Programowanie zaawansowane",
+      name: "Grupa początkująca",
       level: "Poziom II",
       icon: Award,
       color: "cyan",
-      description: "Dla uczestników z podstawową wiedzą algorytmiczną, którzy chcą pogłębić swoją wiedzę.",
+      description: "Dla uczestników znających podstawy C++ i chcących rozwijać umiejętności algorytmiczne.",
       requirements: [
-        "Biegła znajomość wybranego języka programowania",
+        "Podstawowa znajomość C++",
+        "Umiejętność pisania prostych programów",
+        "Pętle, instrukcje warunkowe, tablice",
+        "Funkcje"
+      ],
+      topics: [
+        "Wprowadzenie do złożoności obliczeniowej",
+        "Sortowanie i wyszukiwanie",
+        "Struktury danych (vector, string)",
+        "Rekurencja",
+        "Podstawy teorii grafów",
+        "Algorytmy zachłanne - wprowadzenie"
+      ],
+      forWho: "Dla osób z podstawową wiedzą w C++"
+    },
+    {
+      name: "Grupa średniozaawansowana",
+      level: "Poziom III",
+      icon: Rocket,
+      color: "blue",
+      description: "Dla uczestników z dobrą znajomością C++ i podstaw algorytmiki.",
+      requirements: [
+        "Dobra znajomość C++",
         "Podstawowa znajomość struktur danych",
         "Rozwiązywanie prostych zadań algorytmicznych",
         "Znajomość notacji Big-O"
@@ -42,16 +65,17 @@ export default function GroupsSection() {
         "Zaawansowane algorytmy grafowe (DFS, BFS, Dijkstra)",
         "Drzewa BST i przedziałowe",
         "Teoria liczb i kombinatoryka",
-        "Wyszukiwanie binarne - zastosowania"
+        "Wyszukiwanie binarne - zastosowania",
+        "STL - zaawansowane użycie"
       ],
       forWho: "Polecana dla uczestników zawodów programistycznych"
     },
     {
-      name: "Olimpiada Informatyczna",
-      level: "Poziom III",
-      icon: Rocket,
+      name: "Grupa zaawansowana",
+      level: "Poziom IV",
+      icon: Brain,
       color: "purple",
-      description: "Dla doświadczonych olimpijczyków przygotowujących się do finałów OI i międzynarodowych zawodów.",
+      description: "Dla doświadczonych olimpijczyków przygotowujących się do finałów OI.",
       requirements: [
         "Doświadczenie w zawodach programistycznych",
         "Zaawansowana znajomość algorytmów i struktur danych",
@@ -61,10 +85,10 @@ export default function GroupsSection() {
       topics: [
         "Zaawansowane programowanie dynamiczne",
         "Geometria obliczeniowa",
-        "Algorytmy tekstowe (KMP, Z-algorithm)",
+        "Algorytmy tekstowe (KMP, Z-algorithm, Suffix Array)",
         "Przepływy w sieciach",
         "Zaawansowane struktury danych (Segment Tree, Fenwick)",
-        "Techniki optymalizacji kodu"
+        "Techniki optymalizacji i sztuczki olimpijskie"
       ],
       forWho: "Dla finalistów zawodów szczebla wojewódzkiego i wyżej"
     }
@@ -84,6 +108,13 @@ export default function GroupsSection() {
       icon: "bg-cyan-500",
       text: "text-cyan-700",
       hover: "hover:border-cyan-300"
+    },
+    blue: {
+      bg: "bg-blue-50",
+      border: "border-blue-200",
+      icon: "bg-blue-500",
+      text: "text-blue-700",
+      hover: "hover:border-blue-300"
     },
     purple: {
       bg: "bg-purple-50",
@@ -114,7 +145,7 @@ export default function GroupsSection() {
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid lg:grid-cols-2 xl:grid-cols-4 gap-6 mb-16">
           {groups.map((group, index) => {
             const colors = colorClasses[group.color];
             return (
