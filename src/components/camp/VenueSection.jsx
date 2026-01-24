@@ -6,12 +6,12 @@ export default function VenueSection() {
   const amenities = [
     { icon: BedDouble, label: "Pokoje 2-4 osobowe", desc: "z łazienkami" },
     { icon: UtensilsCrossed, label: "Pełne wyżywienie", desc: "3 posiłki dziennie" },
-    { icon: Wifi, label: "Internet", desc: "Wi-Fi w całym ośrodku" },
-    { icon: Monitor, label: "Sale wykładowe", desc: "do 130 osób" },
-    { icon: TreePine, label: "Otoczenie", desc: "las i góry" },
-    { icon: Dumbbell, label: "Infrastruktura", desc: "boiska, kort, siłownia" },
+    { icon: Wifi, label: "Internet", desc: "dostęp na terenie" },
+    { icon: Monitor, label: "Sale konferencyjne", desc: "wyposażone" },
+    { icon: TreePine, label: "Otoczenie", desc: "las i rzeka" },
+    { icon: Dumbbell, label: "Boisko", desc: "wielofunkcyjne" },
     { icon: Car, label: "Parking", desc: "bezpłatny" },
-    { icon: MapPin, label: "Lokalizacja", desc: "Beskid Sądecki" }
+    { icon: MapPin, label: "Lokalizacja", desc: "25 km od Kielc" }
   ];
 
   return (
