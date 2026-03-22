@@ -14,7 +14,7 @@ export default function TeamSection() {
     {
       name: "Natalia Mietelska",
       role: "Kadra merytoryczna i wychowawcza",
-      image: "https://media.base44.com/images/public/6974ad53f5559cb75fdff0f9/7c614d774_Zrzutekranu2026-03-22o191121.png",
+      image: "https://media.base44.com/images/public/6974ad53f5559cb75fdff0f9/d35ca8f7e_Zrzutekranu2026-03-22o192207.png",
       bio: "Laureatka i finalistka OIJ oraz wielokrotna uczestniczka II etapu OI. Uczestniczka obozu OKI 2025.",
       achievements: ["Laureatka OIJ", "Finalistka OI"]
     },
