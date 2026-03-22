@@ -35,7 +35,7 @@ export default function TeamSection() {
     {
       name: "Mikołaj Bulge",
       role: "Kadra merytoryczna i wychowawcza",
-      image: "https://media.base44.com/images/public/6974ad53f5559cb75fdff0f9/2b251fd27_Zrzutekranu2026-03-22o191158.png",
+      image: "https://media.base44.com/images/public/6974ad53f5559cb75fdff0f9/c5d232646_Zrzutekranu2026-03-22o192057.png",
       bio: "Srebrny medalista Bałtyckiej Olimpiady Informatycznej, wielokrotny laureat i finalista OI oraz OIG. Z OKI od 2020.",
       achievements: ["Medalista BOI", "Laureat OI/OIG"]
     }
