@@ -61,7 +61,7 @@ export default function TeamSection() {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="flex flex-col gap-6 max-w-3xl mx-auto">
           {team.map((member, index) => (
             <motion.div
               key={index}
@@ -69,17 +69,17 @@ export default function TeamSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="group"
             >
-              <div className="rounded-3xl overflow-hidden border border-slate-100 transition-all duration-300 hover:shadow-xl hover:shadow-cyan-500/10 hover:border-cyan-200">
+              <div className="flex items-center gap-6 bg-slate-50 rounded-2xl border border-slate-100 p-5 hover:shadow-lg hover:border-cyan-200 transition-all">
                 <img
                   src={member.image}
                   alt={member.name}
-                  className="w-full h-64 object-cover object-top"
+                  className="w-24 h-24 rounded-xl object-cover object-left-top flex-shrink-0"
+                  style={{ objectPosition: '15% 10%' }}
                 />
-                <div className="bg-slate-50 p-5 text-center">
+                <div>
                   <h3 className="text-lg font-bold text-slate-900">{member.name}</h3>
-                  <div className="text-cyan-600 text-xs font-medium mb-2">{member.role}</div>
+                  <div className="text-cyan-600 text-xs font-semibold mb-1">{member.role}</div>
                   <p className="text-slate-600 text-sm leading-relaxed">{member.bio}</p>
                 </div>
               </div>
