@@ -71,34 +71,16 @@ export default function TeamSection() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="group"
             >
-              <div className="bg-slate-50 rounded-3xl p-6 border border-slate-100 transition-all duration-300 hover:shadow-xl hover:shadow-cyan-500/10 hover:border-cyan-200">
-                <div className="relative mb-6">
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                    className="w-32 h-32 rounded-2xl mx-auto object-cover"
-                    style={{ objectPosition: '0% 50%' }}
-                  />
-                  <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 bg-cyan-600 text-white px-3 py-1 rounded-full text-xs font-medium">
-                    {member.role}
-                  </div>
-                </div>
-                
-                <div className="text-center">
-                  <h3 className="text-xl font-bold text-slate-900 mb-2">{member.name}</h3>
-                  <p className="text-slate-600 text-sm mb-4 leading-relaxed">{member.bio}</p>
-                  
-                  <div className="flex flex-wrap justify-center gap-2">
-                    {member.achievements.map((achievement, i) => (
-                      <span
-                        key={i}
-                        className="inline-flex items-center gap-1 bg-white border border-slate-200 px-3 py-1 rounded-full text-xs font-medium text-slate-600"
-                      >
-                        <Trophy className="w-3 h-3 text-amber-500" />
-                        {achievement}
-                      </span>
-                    ))}
-                  </div>
+              <div className="rounded-3xl overflow-hidden border border-slate-100 transition-all duration-300 hover:shadow-xl hover:shadow-cyan-500/10 hover:border-cyan-200">
+                <img
+                  src={member.image}
+                  alt={member.name}
+                  className="w-full h-64 object-cover object-top"
+                />
+                <div className="bg-slate-50 p-5 text-center">
+                  <h3 className="text-lg font-bold text-slate-900">{member.name}</h3>
+                  <div className="text-cyan-600 text-xs font-medium mb-2">{member.role}</div>
+                  <p className="text-slate-600 text-sm leading-relaxed">{member.bio}</p>
                 </div>
               </div>
             </motion.div>

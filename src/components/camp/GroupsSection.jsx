@@ -9,88 +9,60 @@ export default function GroupsSection() {
       level: "Poziom I",
       icon: Users,
       color: "emerald",
-      description: "Dla osób, które rozpoczynają swoją przygodę z programowaniem w C++.",
-      requirements: [
-        "Brak wymagań wstępnych",
-        "Chęć nauki programowania",
-        "Motywacja i zaangażowanie",
-        "Własny laptop"
-      ],
+      description: "Uczymy się programować w C++ od zera. Żadne wcześniejsze doświadczenie nie jest wymagane – zaczynamy od absolutnych podstaw.",
       topics: [
         "Podstawy składni C++",
         "Zmienne, typy danych, operatory",
         "Instrukcje warunkowe i pętle",
-        "Tablice i podstawowe operacje",
-        "Funkcje i procedury",
+        "Tablice i funkcje",
         "Pierwsze algorytmy"
       ],
-      forWho: "Idealna dla osób bez doświadczenia w programowaniu"
+      forWho: "Brak wymagań wstępnych – każdy jest mile widziany!"
     },
     {
-      name: "Grupa początkująca",
+      name: "Algorytmika od podstaw",
       level: "Poziom II",
       icon: Award,
       color: "cyan",
-      description: "Dla uczestników znających podstawy C++ i chcących rozwijać umiejętności algorytmiczne.",
-      requirements: [
-        "Podstawowa znajomość C++",
-        "Umiejętność pisania prostych programów",
-        "Pętle, instrukcje warunkowe, tablice",
-        "Funkcje"
-      ],
+      description: "Poznajemy podstawowe algorytmy i struktury danych. Wymagana podstawowa znajomość programowania w C++.",
       topics: [
-        "Wprowadzenie do złożoności obliczeniowej",
-        "Sortowanie i wyszukiwanie",
-        "Struktury danych (vector, string)",
-        "Rekurencja",
-        "Podstawy teorii grafów",
-        "Algorytmy zachłanne - wprowadzenie"
+        "Wyszukiwanie binarne",
+        "Algorytm gąsienicy",
+        "Sito Eratostenesa",
+        "Podstawowe struktury danych",
+        "Wprowadzenie do grafów"
       ],
-      forWho: "Dla osób z podstawową wiedzą w C++"
+      forWho: "Znasz podstawy C++ i chcesz poznać algorytmikę"
     },
     {
-      name: "Grupa średniozaawansowana",
+      name: "Algorytmika średniozaawansowana",
       level: "Poziom III",
       icon: Rocket,
       color: "blue",
-      description: "Dla uczestników z dobrą znajomością C++ i podstaw algorytmiki.",
-      requirements: [
-        "Dobra znajomość C++",
-        "Podstawowa znajomość struktur danych",
-        "Rozwiązywanie prostych zadań algorytmicznych",
-        "Znajomość notacji Big-O"
-      ],
+      description: "Trudniejsze algorytmy i zaawansowane struktury danych. Wymagana znajomość materiału z poziomów niższych.",
       topics: [
+        "Zaawansowane struktury danych",
+        "Problemy grafowe",
         "Programowanie dynamiczne",
-        "Zaawansowane algorytmy grafowe (DFS, BFS, Dijkstra)",
-        "Drzewa BST i przedziałowe",
-        "Teoria liczb i kombinatoryka",
-        "Wyszukiwanie binarne - zastosowania",
-        "STL - zaawansowane użycie"
+        "Teoria liczb",
+        "Wyszukiwanie binarne – zastosowania"
       ],
-      forWho: "Polecana dla uczestników zawodów programistycznych"
+      forWho: "Znasz podstawową algorytmikę i chcesz iść dalej"
     },
     {
-      name: "Grupa zaawansowana",
+      name: "Algorytmika zaawansowana",
       level: "Poziom IV",
       icon: Brain,
       color: "purple",
-      description: "Dla doświadczonych olimpijczyków przygotowujących się do finałów OI.",
-      requirements: [
-        "Doświadczenie w zawodach programistycznych",
-        "Zaawansowana znajomość algorytmów i struktur danych",
-        "Programowanie dynamiczne - biegłość",
-        "Rozwiązywanie zadań olimpijskich"
-      ],
+      description: "Zajęcia w formie symulacji zawodów OI. Codziennie trzy zadania do rozwiązania w ciągu pięciu godzin – tak jak na prawdziwej olimpiadzie.",
       topics: [
-        "Zaawansowane programowanie dynamiczne",
+        "Symulacja zawodów Olimpiady",
+        "Zaawansowane DP i optymalizacje",
+        "Algorytmy tekstowe",
         "Geometria obliczeniowa",
-        "Algorytmy tekstowe (KMP, Z-algorithm, Suffix Array)",
-        "Przepływy w sieciach",
-        "Zaawansowane struktury danych (Segment Tree, Fenwick)",
-        "Techniki optymalizacji i sztuczki olimpijskie"
+        "Przepływy w sieciach"
       ],
-      forWho: "Dla finalistów zawodów szczebla wojewódzkiego i wyżej"
+      forWho: "Przygotowanie do II etapu i finału OI Szkół Średnich"
     }
   ];
 
@@ -140,8 +112,8 @@ export default function GroupsSection() {
             Znajdź swoją grupę
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-            Dzielimy uczestników na grupy według poziomu zaawansowania, aby każdy mógł 
-            uczyć się w optymalnym dla siebie tempie i otrzymać maksimum z zajęć.
+            Mamy 4 grupy – od zupełnych początków po przygotowanie do finału OI. 
+            W trakcie obozu możesz dowolnie zmieniać grupy. Jedynym językiem programowania jest C++.
           </p>
         </motion.div>
 
@@ -168,21 +140,6 @@ export default function GroupsSection() {
                 </div>
 
                 <p className="text-slate-600 mb-6 leading-relaxed">{group.description}</p>
-
-                <div className="mb-6">
-                  <h4 className="font-semibold text-slate-900 mb-3 flex items-center gap-2">
-                    <Brain className="w-5 h-5 text-slate-500" />
-                    Wymagania:
-                  </h4>
-                  <ul className="space-y-2">
-                    {group.requirements.map((req, i) => (
-                      <li key={i} className="flex items-start gap-2 text-sm text-slate-600">
-                        <span className="w-1.5 h-1.5 bg-slate-400 rounded-full mt-2 flex-shrink-0" />
-                        {req}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
 
                 <div className="mb-6">
                   <h4 className="font-semibold text-slate-900 mb-3">Tematy zajęć:</h4>
@@ -226,13 +183,10 @@ export default function GroupsSection() {
                 Nie jesteś pewien, do której grupy należysz?
               </h3>
               <p className="text-slate-600 leading-relaxed mb-4">
-                Nie martw się! Pierwszego dnia obozu przeprowadzimy test kompetencji, który pomoże 
-                nam przydzielić Cię do odpowiedniej grupy. Test jest krótki i służy tylko temu, 
-                aby zapewnić Ci najlepsze warunki do nauki.
+                Pierwszego dnia obozu przeprowadzimy krótki test, który pomoże nam przydzielić Cię do odpowiedniej grupy.
               </p>
               <p className="text-slate-600 leading-relaxed">
-                Grupy są elastyczne – jeśli okaże się, że materiał jest dla Ciebie za łatwy lub 
-                za trudny, zawsze możemy przenieść Cię do innej grupy podczas obozu.
+                W trakcie obozu możesz dowolnie zmieniać grupy – jeśli materiał jest za łatwy lub za trudny, po prostu przejdź wyżej lub niżej. Każda grupa ma formę warsztatową, a wymaganiem każdego poziomu jest znajomość materiału z grup niższych.
               </p>
             </div>
           </div>

@@ -22,7 +22,7 @@ export default function AboutSection() {
     {
       icon: Brain,
       title: "Rozwój",
-      description: "Poszerzaj horyzonty – od algorytmów po sztuczną inteligencję, od teorii do praktycznych projektów."
+      description: "Wspólne odkrywanie, zrozumienie, radość z bycia coraz mocniejszym – to główny cel każdych zajęć."
     },
     {
       icon: Sparkles,
@@ -97,16 +97,14 @@ export default function AboutSection() {
                 Dla kogo jest ten obóz?
               </h3>
               <p className="text-slate-300 text-lg leading-relaxed mb-6">
-                Obóz jest skierowany do młodzieży do 17 lat (na koniec obozu), która interesuje się 
-                programowaniem w C++ i algorytmiką. Niezależnie od tego, czy dopiero zaczynasz przygodę 
-                z kodem, czy już startujesz w olimpiadzie – znajdziesz tu coś dla siebie.
+                Zapraszamy każdego nastolatka! Od obecnej 6 klasy SP (7 klasa po wakacjach) do 3 klasy szkoły średniej – do 17 roku życia włącznie na koniec obozu. Nieważne czy jesteś zupełnym początkiem, czy startujesz w olimpiadzie.
               </p>
               <ul className="space-y-4">
                 {[
-                  "Młodzież do 17 lat (wiek na koniec obozu)",
-                  "Uczniowie szkół podstawowych i średnich",
-                  "Pasjonaci algorytmiki i programowania w C++",
-                  "Osoby przygotowujące się do Olimpiady Informatycznej"
+                  "Uczniowie od 6 klasy SP do 3 klasy LO/technikum",
+                  "Do 17 roku życia włącznie na koniec obozu",
+                  "Chcący poznać kolegów pasjonatów informatyki",
+                  "Przygotowujący się do Olimpiady Informatycznej"
                 ].map((item, i) => (
                   <li key={i} className="flex items-center gap-3 text-slate-200">
                     <span className="w-2 h-2 bg-cyan-400 rounded-full" />
