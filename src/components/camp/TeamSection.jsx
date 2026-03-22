@@ -7,7 +7,7 @@ export default function TeamSection() {
     {
       name: "Daniel Olkowski",
       role: "Kadra merytoryczna i wychowawcza",
-      image: "https://media.base44.com/images/public/6974ad53f5559cb75fdff0f9/214f29c47_Zrzutekranu2026-03-22o191104.png",
+      image: "https://media.base44.com/images/public/6974ad53f5559cb75fdff0f9/1826b9a78_Zrzutekranu2026-03-22o192220.png",
       bio: "Założyciel OKI, nauczyciel w SP 221 w Warszawie. Od lat zaangażowany w przygotowanie młodzieży do OI oraz OIJ.",
       achievements: ["Założyciel OKI", "Nauczyciel SP 221"]
     },
