@@ -6,45 +6,38 @@ export default function TeamSection() {
   const team = [
     {
       name: "Daniel Olkowski",
-      role: "Główny organizator",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
-      bio: "Założyciel Olimpijskiego Koła Informatycznego. Pasjonat edukacji informatycznej i mentor młodych talentów.",
-      achievements: ["Twórca OKI", "5+ lat doświadczenia"]
+      role: "Kadra merytoryczna i wychowawcza",
+      image: "https://media.base44.com/images/public/6974ad53f5559cb75fdff0f9/214f29c47_Zrzutekranu2026-03-22o191104.png",
+      bio: "Założyciel OKI, nauczyciel w SP 221 w Warszawie. Od lat zaangażowany w przygotowanie młodzieży do OI oraz OIJ.",
+      achievements: ["Założyciel OKI", "Nauczyciel SP 221"]
     },
     {
-      name: "Michał Kowalski",
-      role: "Trener algorytmiki",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80",
-      bio: "Finalista Olimpiady Informatycznej, student informatyki na Uniwersytecie Warszawskim.",
-      achievements: ["Finalista OI", "Rating CF 2200+"]
+      name: "Natalia Mietelska",
+      role: "Kadra merytoryczna i wychowawcza",
+      image: "https://media.base44.com/images/public/6974ad53f5559cb75fdff0f9/7c614d774_Zrzutekranu2026-03-22o191121.png",
+      bio: "Laureatka i finalistka OIJ oraz wielokrotna uczestniczka II etapu OI. Uczestniczka obozu OKI 2025.",
+      achievements: ["Laureatka OIJ", "Finalistka OI"]
     },
     {
-      name: "Anna Nowak",
-      role: "Trenerka",
-      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&q=80",
-      bio: "Laureatka Olimpiady Informatycznej, doktorantka specjalizująca się w algorytmach.",
-      achievements: ["Laureatka OI", "Publikacje naukowe"]
+      name: "Jakub Kaszycki",
+      role: "Kadra merytoryczna",
+      image: "https://media.base44.com/images/public/6974ad53f5559cb75fdff0f9/2125e108e_Zrzutekranu2026-03-22o191130.png",
+      bio: "Weteran OI oraz OIJ, student matematyki i informatyki na UW. Pasjonat algorytmów i języków programowania.",
+      achievements: ["Weteran OI/OIJ", "Student UW"]
     },
     {
-      name: "Piotr Wiśniewski",
-      role: "Instruktor",
-      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80",
-      bio: "Student Politechniki Warszawskiej, wielokrotny uczestnik zawodów programistycznych.",
-      achievements: ["Top 100 ICPC", "Mentor OKI"]
+      name: "Magda Czapiewska",
+      role: "Kadra merytoryczna i wychowawcza",
+      image: "https://media.base44.com/images/public/6974ad53f5559cb75fdff0f9/a2f9b6e62_Zrzutekranu2026-03-22o191148.png",
+      bio: "Studentka informatyki na UW. Cierpliwa korepetytorka, pasjonatka spacerów i muzeów historycznych.",
+      achievements: ["Studentka UW", "Koordynatorka OKI"]
     },
     {
-      name: "Magdalena Czapiewska",
-      role: "Koordynatorka",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&q=80",
-      bio: "Odpowiedzialna za logistykę i bezpieczeństwo uczestników obozu.",
-      achievements: ["5 lat w OKI", "Certyfikat pierwszej pomocy"]
-    },
-    {
-      name: "Lech Duraj",
-      role: "Gość specjalny",
-      image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&q=80",
-      bio: "Legenda polskiej informatyki, wieloletni trener kadry olimpijskiej.",
-      achievements: ["Trener kadry OI", "Wykładowca UJ"]
+      name: "Mikołaj Bulge",
+      role: "Kadra merytoryczna i wychowawcza",
+      image: "https://media.base44.com/images/public/6974ad53f5559cb75fdff0f9/2b251fd27_Zrzutekranu2026-03-22o191158.png",
+      bio: "Srebrny medalista Bałtyckiej Olimpiady Informatycznej, wielokrotny laureat i finalista OI oraz OIG. Z OKI od 2020.",
+      achievements: ["Medalista BOI", "Laureat OI/OIG"]
     }
   ];
 
@@ -84,6 +77,7 @@ export default function TeamSection() {
                     src={member.image}
                     alt={member.name}
                     className="w-32 h-32 rounded-2xl mx-auto object-cover"
+                    style={{ objectPosition: '0% 50%' }}
                   />
                   <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 bg-cyan-600 text-white px-3 py-1 rounded-full text-xs font-medium">
                     {member.role}

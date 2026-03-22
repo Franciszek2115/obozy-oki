@@ -43,7 +43,7 @@ export default function VenueSection() {
           >
             <div className="relative grid grid-cols-2 gap-3">
               <img 
-                src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=500&q=80"
+                src="https://media.base44.com/images/public/6974ad53f5559cb75fdff0f9/b3ae46fd2_image.png"
                 alt="Ośrodek Wierna - budynek główny"
                 className="rounded-2xl shadow-xl w-full h-48 object-cover col-span-2"
               />
