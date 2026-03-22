@@ -21,7 +21,7 @@ export default function TeamSection() {
     {
       name: "Jakub Kaszycki",
       role: "Kadra merytoryczna",
-      image: "https://media.base44.com/images/public/6974ad53f5559cb75fdff0f9/2125e108e_Zrzutekranu2026-03-22o191130.png",
+      image: "https://media.base44.com/images/public/6974ad53f5559cb75fdff0f9/aeb4b6968_Zrzutekranu2026-03-22o192140.png",
       bio: "Weteran OI oraz OIJ, student matematyki i informatyki na UW. Pasjonat algorytmów i języków programowania.",
       achievements: ["Weteran OI/OIJ", "Student UW"]
     },
