@@ -28,7 +28,7 @@ export default function TeamSection() {
     {
       name: "Magda Czapiewska",
       role: "Kadra merytoryczna i wychowawcza",
-      image: "https://media.base44.com/images/public/6974ad53f5559cb75fdff0f9/a2f9b6e62_Zrzutekranu2026-03-22o191148.png",
+      image: "https://media.base44.com/images/public/6974ad53f5559cb75fdff0f9/131095353_Zrzutekranu2026-03-22o192129.png",
       bio: "Studentka informatyki na UW. Cierpliwa korepetytorka, pasjonatka spacerów i muzeów historycznych.",
       achievements: ["Studentka UW", "Koordynatorka OKI"]
     },
