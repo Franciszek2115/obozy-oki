@@ -4,37 +4,37 @@ import { Code2, Users, Trophy, Sparkles, Brain, Heart } from "lucide-react";
 
 export default function AboutSection() {
   const values = [
-    {
-      icon: Code2,
-      title: "Programowanie",
-      description: "Intensywne warsztaty algorytmiki i programowania prowadzone przez doświadczonych trenerów olimpijskich."
-    },
-    {
-      icon: Users,
-      title: "Społeczność",
-      description: "Spotkaj rówieśników z całej Polski, którzy dzielą Twoją pasję do informatyki i rozwiązywania problemów."
-    },
-    {
-      icon: Trophy,
-      title: "Olimpiada",
-      description: "Przygotuj się do Olimpiady Informatycznej pod okiem finalistów i zwycięzców poprzednich edycji."
-    },
-    {
-      icon: Brain,
-      title: "Rozwój",
-      description: "Wspólne odkrywanie, zrozumienie, radość z bycia coraz mocniejszym – to główny cel każdych zajęć."
-    },
-    {
-      icon: Sparkles,
-      title: "Przygoda",
-      description: "Wycieczki górskie, gry integracyjne, wieczorne pogaduchy – obóz to nie tylko nauka!"
-    },
-    {
-      icon: Heart,
-      title: "Przyjaźnie",
-      description: "Znajdź przyjaciół na całe życie wśród ludzi, którzy Cię rozumieją i wspierają."
-    }
-  ];
+  {
+    icon: Code2,
+    title: "Programowanie",
+    description: "Intensywne warsztaty algorytmiki i programowania prowadzone przez doświadczonych trenerów olimpijskich."
+  },
+  {
+    icon: Users,
+    title: "Społeczność",
+    description: "Spotkaj rówieśników z całej Polski, którzy dzielą Twoją pasję do informatyki i rozwiązywania problemów."
+  },
+  {
+    icon: Trophy,
+    title: "Olimpiada",
+    description: "Przygotuj się do Olimpiady Informatycznej pod okiem finalistów i zwycięzców poprzednich edycji."
+  },
+  {
+    icon: Brain,
+    title: "Rozwój",
+    description: "Wspólne odkrywanie, zrozumienie, radość z bycia coraz mocniejszym – to główny cel każdych zajęć."
+  },
+  {
+    icon: Sparkles,
+    title: "Przygoda",
+    description: "Wycieczki górskie, gry integracyjne, wieczorne pogaduchy – obóz to nie tylko nauka!"
+  },
+  {
+    icon: Heart,
+    title: "Przyjaźnie",
+    description: "Znajdź przyjaciół na całe życie wśród ludzi, którzy Cię rozumieją i wspierają."
+  }];
+
 
   return (
     <section id="about" className="py-24 bg-white">
@@ -44,8 +44,8 @@ export default function AboutSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
-        >
+          className="text-center mb-16">
+          
           <span className="text-cyan-600 font-semibold text-sm uppercase tracking-wider">O obozie</span>
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mt-4 mb-6">
             Więcej niż obóz informatyczny
@@ -54,24 +54,24 @@ export default function AboutSection() {
             Obóz OKI to wyjątkowe połączenie intensywnej nauki programowania w C++, wspaniałej atmosfery 
             i niezapomnianych przygód. To miejsce, gdzie rodzą się przyjaźnie i pasje na całe życie.
           </p>
-          <div className="mt-6 inline-flex items-center gap-2 bg-cyan-100 text-cyan-800 px-4 py-2 rounded-full text-sm font-medium">
-            <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-              <path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
-            </svg>
-            Język programowania: C++
-          </div>
+          
+
+
+
+
+          
         </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
-          {values.map((item, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="group"
-            >
+          {values.map((item, index) =>
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
+            className="group">
+            
               <div className="bg-slate-50 rounded-3xl p-8 h-full border border-slate-100 transition-all duration-300 hover:shadow-xl hover:shadow-cyan-500/10 hover:border-cyan-200 hover:-translate-y-1">
                 <div className="w-14 h-14 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                   <item.icon className="w-7 h-7 text-white" />
@@ -80,7 +80,7 @@ export default function AboutSection() {
                 <p className="text-slate-600 leading-relaxed">{item.description}</p>
               </div>
             </motion.div>
-          ))}
+          )}
         </div>
 
         {/* Target audience */}
@@ -89,8 +89,8 @@ export default function AboutSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="bg-gradient-to-br from-slate-900 to-slate-800 rounded-3xl p-10 md:p-16"
-        >
+          className="bg-gradient-to-br from-slate-900 to-slate-800 rounded-3xl p-10 md:p-16">
+          
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h3 className="text-3xl md:text-4xl font-bold text-white mb-6">
@@ -101,24 +101,24 @@ export default function AboutSection() {
               </p>
               <ul className="space-y-4">
                 {[
-                  "Uczniowie od 6 klasy SP do 3 klasy LO/technikum",
-                  "Do 17 roku życia włącznie na koniec obozu",
-                  "Chcący poznać kolegów pasjonatów informatyki",
-                  "Przygotowujący się do Olimpiady Informatycznej"
-                ].map((item, i) => (
-                  <li key={i} className="flex items-center gap-3 text-slate-200">
+                "Uczniowie od 6 klasy SP do 3 klasy LO/technikum",
+                "Do 17 roku życia włącznie na koniec obozu",
+                "Chcący poznać kolegów pasjonatów informatyki",
+                "Przygotowujący się do Olimpiady Informatycznej"].
+                map((item, i) =>
+                <li key={i} className="flex items-center gap-3 text-slate-200">
                     <span className="w-2 h-2 bg-cyan-400 rounded-full" />
                     {item}
                   </li>
-                ))}
+                )}
               </ul>
             </div>
             <div className="relative">
-              <img 
+              <img
                 src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=600&q=80"
                 alt="Młodzi programiści"
-                className="rounded-2xl shadow-2xl"
-              />
+                className="rounded-2xl shadow-2xl" />
+              
               <div className="absolute -bottom-6 -left-6 bg-cyan-500 text-white px-6 py-4 rounded-xl shadow-lg">
                 <div className="text-3xl font-bold">5+</div>
                 <div className="text-sm opacity-90">lat doświadczenia</div>
@@ -127,6 +127,6 @@ export default function AboutSection() {
           </div>
         </motion.div>
       </div>
-    </section>
-  );
+    </section>);
+
 }
