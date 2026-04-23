@@ -81,12 +81,7 @@ export default function PricingSection() {
               
               <p className="text-center text-slate-600 mb-8 text-lg">{mainPackage.description}</p>
               
-              <div className="text-center mb-8">
-                <div className="inline-block bg-cyan-50 border border-cyan-200 rounded-xl px-6 py-3">
-                  <div className="text-cyan-700 font-semibold text-lg">Cena zostanie podana wkrótce</div>
-                  <div className="text-slate-500 text-sm mt-1">Skontaktuj się z nami, aby dowiedzieć się więcej</div>
-                </div>
-              </div>
+
 
               <div className="grid md:grid-cols-2 gap-3 mb-8">
                 {mainPackage.features.map((feature, i) => (

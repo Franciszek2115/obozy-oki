@@ -7,36 +7,24 @@ export default function GallerySection() {
 
   const images = [
     {
-      url: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&q=80",
+      url: "https://media.base44.com/images/public/6974ad53f5559cb75fdff0f9/fbea370d6_Zrzutekranu2026-04-23o160332.png",
+      caption: "Mecz piłki nożnej"
+    },
+    {
+      url: "https://media.base44.com/images/public/6974ad53f5559cb75fdff0f9/b77581f6f_Zrzutekranu2026-04-23o160410.png",
       caption: "Warsztaty programistyczne"
     },
     {
-      url: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=800&q=80",
-      caption: "Praca w grupach"
+      url: "https://media.base44.com/images/public/6974ad53f5559cb75fdff0f9/66691c630_Zrzutekranu2026-04-23o160427.png",
+      caption: "Wykład dla uczestników"
     },
     {
-      url: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=80",
-      caption: "Wycieczka na Jaworzynę"
+      url: "https://media.base44.com/images/public/6974ad53f5559cb75fdff0f9/b669b4f61_Zrzutekranu2026-04-23o160449.png",
+      caption: "Integracja uczestników"
     },
     {
-      url: "https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=800&q=80",
-      caption: "Integracja przy ognisku"
-    },
-    {
-      url: "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=800&q=80",
-      caption: "Wykład gościa specjalnego"
-    },
-    {
-      url: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80",
-      caption: "Wspólne rozwiązywanie zadań"
-    },
-    {
-      url: "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=800&q=80",
-      caption: "Ceremonia wręczenia nagród"
-    },
-    {
-      url: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
-      caption: "Widoki z Beskidu Sądeckiego"
+      url: "https://media.base44.com/images/public/6974ad53f5559cb75fdff0f9/04ae71adf_Zrzutekranu2026-04-23o160527.png",
+      caption: "Zajęcia pod namiotem"
     }
   ];
 
