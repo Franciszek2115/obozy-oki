@@ -58,10 +58,10 @@ export default function PricingSection() {
         >
           <span className="text-cyan-600 font-semibold text-sm uppercase tracking-wider">Cennik</span>
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mt-4 mb-6">
-            Wybierz swój pakiet
+            Pakiet obozowy
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-            Inwestycja w przyszłość, która się zwraca. Wszystkie pakiety zawierają pełny program obozu.
+            Inwestycja w przyszłość, która się zwraca. Pakiet zawiera pełny program obozu.
           </p>
         </motion.div>
 
@@ -82,10 +82,9 @@ export default function PricingSection() {
               <p className="text-center text-slate-600 mb-8 text-lg">{mainPackage.description}</p>
               
               <div className="text-center mb-8">
-                <div className="inline-block">
-                  <span className="text-6xl font-bold text-slate-900">{mainPackage.price}</span>
-                  <span className="text-2xl text-slate-500 ml-2">PLN</span>
-                  <div className="text-slate-500 text-sm mt-1">za osobę</div>
+                <div className="inline-block bg-cyan-50 border border-cyan-200 rounded-xl px-6 py-3">
+                  <div className="text-cyan-700 font-semibold text-lg">Cena zostanie podana wkrótce</div>
+                  <div className="text-slate-500 text-sm mt-1">Skontaktuj się z nami, aby dowiedzieć się więcej</div>
                 </div>
               </div>
 
@@ -122,7 +121,7 @@ export default function PricingSection() {
               </Button>
 
               <p className="text-center text-slate-500 text-sm mt-4">
-                Zaliczka: 500 PLN • Pozostała kwota: do 1 sierpnia 2026
+                Szczegóły płatności zostaną podane wkrótce
               </p>
             </div>
           </motion.div>
